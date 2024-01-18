@@ -34,7 +34,7 @@ RUN cd /tmp && \
 
 WORKDIR /var/www/html
 
-VOLUME /var/www/html/uploads
+VOLUME /var/www/html
 EXPOSE 80
 ENTRYPOINT ["/config/start.sh"]
 CMD ["nginx", "-g", "daemon off;"]
